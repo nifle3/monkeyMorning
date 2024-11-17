@@ -1,0 +1,29 @@
+linters:
+  disable-all: true
+  enable:
+    - govet
+    - staticcheck
+    - errcheck
+    - unused
+    - gosimple
+    - gosec
+    - gofmt
+    - revive
+    - stylecheck
+    - unconvert
+    - misspell
+
+run:
+  tests: false
+  modules-download-mode: readonly
+  allow-parallel-runners: true
+  allow-serial-runners: true
+
+output:
+  formats:
+    - format: json
+      path: stderr
+    - format: colored-line-number
+
+  uniq-by-line: false
+  print-linter-name: true
