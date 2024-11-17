@@ -28,6 +28,7 @@ jobs:
       - name: install dependencies
         run: |
           go mod tidy
+          go mod download
       - name: build
         run: |
           go build -o main ./cmd/monkeyMorning/main.go
