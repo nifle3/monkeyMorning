@@ -10,3 +10,7 @@ lint:
 test:
 	go build -o main ./cmd/monkeyMorning/main.go
 	go test -v ./...
+
+deps:
+	go mod tidy
+	go mod vendor
