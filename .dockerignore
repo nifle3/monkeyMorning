@@ -30,3 +30,10 @@
 **/values.dev.yaml
 LICENSE
 README.md
+.env
+.github
+vendor
+.env.example
+main
+Makefile
+README.Docker.md
