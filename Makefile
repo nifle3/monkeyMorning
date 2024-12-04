@@ -18,8 +18,8 @@ runevening:
 	./main
 
 generate:
-	sqlc verify
 	sqlc vet
+	sqlc verify
 	sqlc generate
 
 lint:

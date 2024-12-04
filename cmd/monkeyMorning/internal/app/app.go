@@ -14,6 +14,8 @@ import (
 	tele "gopkg.in/telebot.v4"
 )
 
+// TODO: refactor
+// TODO: add save and get from db
 func Run() {
 	ctx := context.Background()
 	config, err := config.New()

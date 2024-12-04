@@ -1,10 +1,11 @@
 version: "2"
 sql:
-- scheme: sql/scheme.sql
+- schema: sql/scheme.sql
   queries: sql/query.sql
   engine: sqlite
   gen: 
-    go: 
+    go:
+      emit_interface: true
       package: db
       out: ./internal/db
       sql_package: "database/sql"
